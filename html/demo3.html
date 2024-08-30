@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhap nam can kiem tra:</p>
+    <input type="text" id="txtNam" name="txtNam">
+    <input type="button" value="Kiem tra" onclick="kiemtranamnhuan()">
+
+    <script>
+        function kiemtranamnhuan(){
+            var nam= document.getElementById("txtNam").value;
+            if(nam%100==0){
+                if(nam%400==0){
+                    alert('Nam '+nam+ 'là năm nhuận');
+                } else{
+                    alert('Nam' +nam+' : khong phai nam nhuan');
+                }
+            } else if(nam %4 ==0){
+                alert('Nam ' +nam+ ': là năm nhuận');
+            } else {
+                alert('Nam ' +nam+ ': Không phảilà năm nhuận')
+            }
+        }
+    </script>
+</body>
+</html>
